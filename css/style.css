@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "./mobile.css";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #9f9f9f;
+}
+
+li {
+    list-style-type: none;
+    line-height: 1;
+}
+.line{
+    line-height: 30px;
+}
+.container {
+    width: 1160px;
+}
+
+/*TOP BUTTON*/
+#toTop {
+    display:none;
+    text-decoration:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index: 1000;
+    overflow:hidden;
+    width:51px;
+    height:51px;
+    border:none;
+    text-indent:100%;
+    background:url(../img/ui.totop.png) no-repeat left top;
+}
+
+#toTopHover {
+    background:url(../img/ui.totop.png) no-repeat left -51px;
+    width:51px;
+    height:51px;
+    display:block;
+    overflow:hidden;
+    float:left;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+    outline:none;
+}
+/*END TOP BUTTON*/
+
+.header {
+    height: 670px;
+
+    background-image: url("../img/bg.png");
+    background-size: cover;
+}
+.header-nav{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.content-about {
+    height: 420px;
+}
+.content-about-img{
+    background-image: url("../img/AmeliaWoods.jpg");
+    background-size: cover;
+}
+div.content-about-img div.row{
+    background: rgba(88, 88, 88, 0.65);
+}
+div.content-about-img p{
+    color: white !important;
+}
+div.content-about-img h2{
+    color: white !important;
+}
+nav div.collapse > ul > li {
+    transition: font-size 1s;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+div.content-skills h2 {
+    font-weight: 600;
+}
+
+div.h-100 > div.header__box > h2 {
+    font-weight: 600;
+}
+
+div.mt-5 > div.container h2 {
+    font-weight: 600;
+}
+
+div.h-100 > div.header__box > p {
+    text-align: justify;
+}
+
+.style-for-button {
+    padding: 10px 20px 10px 20px;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+}
+
+div.content-about p {
+    font-size: 16px;
+}
+
+/*.content-skills-color {
+    background-color: #f8f9fa; !* Цвет фона *!
+    background-image: linear-gradient(to right, transparent 50%, #6c757d 50%);
+}*/
+
+div.content-skills p.text-uppercase {
+    font-size: 12px;
+}
+
+div.h-100 > div.col-xl-3 span {
+    font-size: 12px;
+}
+
+div.h-100 > div.col-xl-3 strong {
+    font-size: 16px;
+}
+
+/*ГАЛЕРЕЯ*/
+.gallery {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.darkened:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-image: url("../img/zoom.png");
+    background-size: cover;
+    z-index: 1;
+}
+
+/*ПОКАЗАТЬ БОЛЬШЕ*/
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-trigger {
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6C757D;
+    font-size: 1.2em;
+    line-height: 2;
+    /*    border: 1px solid #ddd;
+        border-radius: .25em;*/
+    width: 100%;
+    height: 100px;
+}
+
+div.mt-5 div.text-center p {
+    font-size: 14px;
+}
+
+.carousel-inner {
+    height: 600px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 200px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 500px;
+}
+
+div.form-row h2 {
+    font-weight: 600;
+}
+
+div.bg-dark.pt-5.pb-5 h2, p {
+    font-size: 15px;
+}
+
+.form-control-two {
+    height: 200px !important;
+}
+
+.form-control-tree {
+    border-radius: 0 !important;
+    border: 0 solid black !important;
+}
+
+.form-home {
+    height: 750px;
+}
+
+.navbar {
+    padding: 0rem 0rem !important;
+}
+label{
+    margin-bottom: 0!important;
+}
