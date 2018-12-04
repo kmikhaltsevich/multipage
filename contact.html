@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mobile.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -91,7 +92,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="col-8 mt-4">
+                        <div class="col-12 mt-4">
                             <button class="style-for-button bg-primary">send message</button>
                         </div>
                     </div>
@@ -113,11 +114,38 @@
                             // Порядок по умолчанию: «широта, долгота».
                             // Чтобы не определять координаты центра карты вручную,
                             // воспользуйтесь инструментом Определение координат.
-                            center: [55.76, 37.64],
+                            center: [53.9, 27.56659],
                             // Уровень масштабирования. Допустимые значения:
                             // от 0 (весь мир) до 19.
-                            zoom: 7
+                            zoom: 14
                         });
+
+
+                        // Создаем геообъект с типом геометрии "Точка".
+                        myGeoObject = new ymaps.GeoObject({
+                            // Описание геометрии.
+                            geometry: {
+                                type: "Point",
+                                coordinates: [53.899485, 27.561141]
+                            },
+                            // Свойства.
+                            properties: {
+                                // Контент метки.
+                                iconContent: 'IT Академия ШАГ',
+                                hintContent: 'Координаты: 53.899485, 27.561141'
+                            }
+                        }, {
+                            // Опции.
+                            // Иконка метки будет растягиваться под размер ее содержимого.
+                            preset: 'islands#blackStretchyIcon',
+                            // Метку можно перемещать.
+                            draggable: true
+                        }),
+
+
+                        myMap.geoObjects
+                            .add(myGeoObject)
+                            .add(myPieChart)
                     }
                 </script>
                 <div id="map" style="width: 100%; height: 600px;"></div>

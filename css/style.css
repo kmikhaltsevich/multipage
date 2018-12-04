@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import "./mobile.css";
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -67,6 +66,9 @@ li {
 .content-about {
     height: 420px;
 }
+.about__content-about{
+    height: 420px;
+}
 .content-about-img{
     background-image: url("../img/AmeliaWoods.jpg");
     background-size: cover;
@@ -75,12 +77,12 @@ div.content-about-img div.row{
     background: rgba(88, 88, 88, 0.65);
 }
 div.content-about-img p{
-    color: white !important;
+    color: white ;
 }
 div.content-about-img h2{
-    color: white !important;
+    color: white ;
 }
-nav div.collapse > ul > li {
+.nav-link {
     transition: font-size 1s;
     font-weight: 600;
     font-size: 12px;
@@ -101,7 +103,9 @@ div.mt-5 > div.container h2 {
 div.h-100 > div.header__box > p {
     text-align: justify;
 }
-
+.progress_height{
+    height: 5px !important;
+}
 .style-for-button {
     padding: 10px 20px 10px 20px;
     border-width: 0;
@@ -214,7 +218,7 @@ div.bg-dark.pt-5.pb-5 h2, p {
 }
 
 .form-control-two {
-    height: 200px !important;
+    height: 200px;
 }
 
 .form-control-tree {

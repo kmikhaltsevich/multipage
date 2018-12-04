@@ -1,52 +1,219 @@
 @media screen and (max-width: 980px) {
 
-.container{
-    max-width: 980px !important;
-}
+    .container {
+        max-width: 100%;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .content-about {
+        height: auto;
+    }
+    .about__content-about{
+        height: 550px;
+    }
+    .about__content-about h2{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .about__content-about p{
+        font-size: 40px;
+    }
+    .form-home {
+        height: auto;
+    }
+
     .navbar-collapse {
-        position: absolute!important;
-        top: 120px !important;
+        position: absolute;
+        top: 120px;
         right: 0px;
         z-index: 20;
     }
-    nav div.collapse > ul > li {
+
+    .nav-link {
         transition: font-size 1s linear;
         font-weight: 600;
-        font-size: 50px !important;
+        font-size: 50px;
         background: #ffffff;
         padding: 5px 10px 5px 10px;
         margin: 3px;
     }
-    .navbar-toggler{
-        border-radius: 0rem !important;
-        font-size: 4rem !important;
-        border: 4px solid #fffffb !important;
-        background: white !important;
+
+    .navbar-toggler {
+        border-radius: 0rem;
+        font-size: 4rem;
+        border: 4px solid #fffffb;
+        background: white;
     }
-    .header__box{
+
+    .header__box {
         background: rgba(76, 76, 76, 0.52);
         padding: 20px;
+        margin: 40px 0 40px 0;
     }
-    .style-for-button{
-        font-size: 30px;
-    }
+
     div.h-100 > div.header__box > p {
         color: white;
-        font-size: 25px;
+        font-size: 40px;
 
     }
+
     div.h-100 > div.header__box > h2 {
         color: white;
-        font-size: 35px;
+        font-size: 50px;
     }
-    .logo{
+
+    .logo {
         animation: rotate 6s linear infinite;
     }
 
     @keyframes rotate {
-        100% {-webkit-transform: rotate(360deg);
+        100% {
+            -webkit-transform: rotate(360deg);
             -ms-transform: rotate(360deg);
             transform: rotate(360deg);
         }
     }
+    .index__about {
+        padding: 40px 0 40px 0;
+    }
+
+    div.index__about h2 {
+        font-size: 50px;
+    }
+
+    div.index__about p {
+        font-size: 40px;
+    }
+
+    .index__proskill {
+        margin-bottom: 60px;
+    }
+
+    div.index__proskill h2 {
+        font-size: 50px;
+    }
+
+    div.index__proskill p {
+        font-size: 40px;
+    }
+
+    .progress_height {
+        height: 20px !important;
+    }
+
+    div.h-100 > div.col-xl-3 strong {
+        font-size: 35px;
+    }
+
+    div.h-100 > div.col-xl-3 span {
+        font-size: 28px;
+    }
+
+    .index__img-client {
+        height: 60px;
+    }
+
+    .read-more-trigger {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+    div.mt-5 div.text-center > h2 {
+        font-size: 50px;
+    }
+
+    div.mt-5 div.text-center > p {
+        font-size: 40px;
+    }
+
+    div.index__plus-min img {
+        height: 80px;
+    }
+
+    div.index__plus-min h6 {
+        font-size: 40px;
+    }
+
+    div.index__plus-min p {
+        font-size: 30px !important;
+        margin-bottom: 50px;
+    }
+
+    div.carousel-inner h5 {
+        font-size: 40px;
+    }
+
+    div.carousel-inner p {
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 90px;
+    }
+
+    div.form-row h2 {
+        font-weight: 600;
+        font-size: 50px;
+    }
+
+    div.form-row p {
+        font-size: 30px;
+    }
+
+    div.bg-dark.pt-5.pb-5 h2, p {
+        font-size: 30px;
+    }
+
+    .form-control-tree {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .form-control-two {
+        height: 200px;
+    }
+
+    .style-for-button {
+        font-size: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    /*TOP BUTTON*/
+    #toTop {
+        display:none;
+        text-decoration:none;
+        position:fixed;
+        bottom:40px;
+        right:40px;
+        z-index: 1000;
+        overflow:hidden;
+        width:51px;
+        height:51px;
+        border:none;
+        text-indent:100%;
+        background:url(../img/ui.totop.png) no-repeat left top;
+    }
+
+    #toTopHover {
+        background:url(../img/ui.totop.png) no-repeat left -51px;
+        width:51px;
+        height:51px;
+        display:block;
+        overflow:hidden;
+        float:left;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter:alpha(opacity=0);
+    }
+
+    #toTop:active, #toTop:focus {
+        outline:none;
+    }
+    /*END TOP BUTTON*/
 }
